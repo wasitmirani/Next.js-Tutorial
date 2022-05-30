@@ -1,5 +1,6 @@
-const NavBar= () => {
+import Link from "next/link";
 
+const NavBar= () => {
     return (
       <div >
           <nav>
@@ -7,12 +8,14 @@ const NavBar= () => {
                     <div>
                         <h2>Logo</h2>
                     </div>
-                    <a>Home</a>
-                    <a>About</a>
-                    <a>Contact</a>
+                    <Link href="/">Home</Link>
+                    <Link href="/about">About</Link>
+                    <Link href="/contact">Contact</Link>
                 </div>  
           </nav>
 
       </div>
     )
 }
+
+export default NavBar;
